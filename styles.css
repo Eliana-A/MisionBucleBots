@@ -1,0 +1,234 @@
+
+body {
+    background-color: #01012B; /* color de fondo del cuerpo (body) de la página    */
+    padding: 10px;  /* espacio interno entre el contenido y el borde */
+    font-family: 'Roboto Mono', monospace, 'Orbitron','Quicksand', sans-serif; /*Fuente del texto*/
+}
+
+header {
+  display: flex; /* Dispone que el contenedor sea flexible*/
+  align-items: flex-end; /* Centrado vertical */
+  justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
+  background-color: #01012B;
+  padding: 10px 50px;
+  flex-wrap: wrap; /* hace que si no caben los elementos en una linea, los baje a la siguiente*/
+}
+
+.logo img {
+  height: 120px; /*Fijo el alto de la imagen*/
+  width: auto; /*Dejo el ancho automático para que la imagen se acomode sin perder la proporción*/
+  
+}
+
+nav ul.menu {
+  display: flex;/* Organiza los elementos en fila horizontal */
+  list-style: none;   /* estilo de viñetas */
+  margin: 0;  /*Elimina el margen predeterminado*/
+  padding: 2px;  /*Elimina el relleno interior predeterminado*/
+  gap: 50px; /* con gap defino el espacio entre los elementos*/
+  font-family: 'Orbitron', sans-serif, monospace, cursive, "Times New Roman", Times, serif; 
+  box-shadow: 0 4px 6px #b6b6b4; /* Sombra suave */
+}
+
+nav a {
+    text-decoration: none; /* text-decoration sirve para colocar subrayado, sobrelineado, tachado o indicarle que ninguno como en este caso*/ 
+    color:#FCFCFC;
+    font-size: 130%; /*Tamaño del texto. En este caso un 30% más que el tamaño base*/
+    font-weight: bold; /*coloco el texto en negrita*/
+    font-family: 'Orbitron', sans-serif, monospace, cursive, o fantasy"Times New Roman",Times,serif; 
+}
+
+nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se destaquen*/
+  color:  #b6b6b4 ; /*Cambia el color de la letra*/
+  background-color: #01012B;
+  padding: 5px;/* Ajusta el tamaño del padding interno */
+  border-radius: 10px; /* Redondea las esquinas de los bordes */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Agrega sombra  */
+}
+
+.container {  /*En el caso de mi página lo utilizo para resaltar el contenido central o más relevante*/
+    width: 100%;
+    max-width: 1200px; /*Tamaño máximo del contenedor*/
+    margin: 10px auto; /*margen arriba y abajo de 10px e izquierdo y derecho automático, lo que lo centra horizontalmente*/
+    background-color: #01012B; /* Fondo ligeramente más claro para el contenedor principal */
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.centrar {  /*La utilizo para centrar la imágen en el contenedor*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.latido { /*Ancho y alto de la imágen*/
+  width: 30%;
+  height: auto; 
+}
+
+ 
+
+.video-wrapper {   /*Debí crear este contenedor para que el video sea responsive*/
+  position: relative;
+  width: 100%; /* Controla el ancho directamente */
+  max-width: 700px; /* Tamaño máximo */
+  margin: 30px auto; /* Centrado vertical y horizontal */
+  
+}
+
+.video-wrapper iframe {
+  width: 100%; /* Ocupa el 100% del contenedor */
+  height: 400px; /* Altura fija inicial */
+  border-radius: 10px;
+  border: none;
+}
+
+.fondo {
+  height: auto; /*Alto de la imagen aautomática*/
+  width: 70%; /*Define el ancho de la imagen al 90% con relación al contenedor*/
+  display: block;
+  margin: 0 auto; /* Elimina el margen por defecto y centra la imagen horizontalmente */
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave */
+  
+}
+
+/*Agrego estilos y formato especial para cada etiqueta de formato texto */
+h3 {
+  margin: 20px;
+}
+h1, h2, h3, h4, h5, p {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-family: 'Roboto Mono', monospace, 'Quicksand', sans-serif;
+}
+
+h1 {
+  color: #FCFCFC;
+  font: small-caps 170%/170% serif;
+  text-align: center;
+}
+
+h2 {
+  color: #E6E6FE;
+  font: small-caps 150%/150% serif;
+  text-align: left;
+}
+
+h3{
+  color: #E6E6FE;
+}
+
+h4 {
+  color: #E6E6FE;
+  font: small-caps 120%/120% serif;
+  text-align: left;
+ }
+
+a {
+  color: #e6e6e3;
+  font: small-caps 120%/120% serif;
+  text-align: right;
+}
+
+/*Estilo de la líneaa*/
+hr {   
+  border: 1px solid  #3565E8; width: 100%;
+  margin-top: 20px; /*Margen superior*/
+}
+
+img {
+  width: 70%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+  
+.elem {
+  display: flex; /* Dispone que el contenedor sea flexible*/
+  margin-top: 50px;
+  margin-left: 20px;
+}
+ 
+.elem ul{
+  list-style-type: square;
+  padding-left: 40px;
+}
+.elem ul li::marker {
+  color: #3565E8; /* color de la viñeta */
+}
+
+/* Agrupa horizontalmente los videos */
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /*centra los vídeos en la página */
+  gap: 20px;
+  margin: 10px 0;
+}
+
+.videos iframe {
+  width: 100%;
+  height: 100%; /* Altura fija a 220px*/
+  border: none; /*sin bordes*/
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+.latido {  /*Coloco efecto al título*/
+  animation: latir 1.5s infinite ease-in-out; /* Aplica la animación durante 1.5 seg. y se repite infinitamente 
+  y coloco ease-in-out para una transición suave de entrada y salida */
+  display: inline-block; /* Mejora la transformación del textos sin ocupar todo el ancho */
+  color: #3565E8; /* Color para destacar */
+}
+
+@keyframes latir {
+  0%, 100% {
+    transform: scale(1);/* Al inicio y al final de cada ciclo, el texto tiene su tamaño original */
+  }
+  50% {
+    transform: scale(1.05); /* A la mitad del ciclo, el texto se agranda un 5%, simulando un latido */
+  }
+}
+
+
+/* Estilo del footer  */
+footer {
+  margin-top: 20px;
+  padding: 20px 50px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #01012B;
+  color: #f5f2e8;
+  border-top: 2px solid #01012B;
+}
+
+/* Copyright centrado en la página */
+footer p {
+  text-align: left;
+  margin-top: 40px;
+  font-size: 0.9em;
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+  .video-wrapper {
+    width: 95%;
+  }
+  .video-wrapper iframe {
+    height: 300px; /* Altura menor en móviles */
+  }
+   .videos iframe {
+    height: 260px; /* Alto máximo */
+  }
+}
+
+@media (max-width: 480px) {
+  .video-wrapper iframe {
+    height: 200px; /* Altura muy pequeña */
+  }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bucle Bot</title>
+  <link rel="icon" href="imagenes/logo.png" type="image/png"> <!--iono que aparecerá en la pestaña-->
+  <meta name="theme-color" content="#3565E8"> <!-- color de la pestaña (sólo parece funcionar en algunos navegadores)-->
+  
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo style.css-->
+   
+</head>
+
+<!--Realizo comentarios en donde creo necesario aclarar, intentando no caer en excesos o redundancias -->  
+<body>
+  <!-- Encabezado principal con logo y menú de navegación  -->
+  <header>
+    
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="Logo" class="logo"/>
+    </div>
+    
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="mision.html">Misión</a></li>
+        <li><a href="creditos.html">Créditos</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+  
+ <main>
+  <div class="container">    <!-- Creo la clase "contairer" para luego organizar dentro la info y darle formato -->
+    
+    <div> 
+      <h2> Público Objetivo:</h2><h3>Estudiantes de 7° u 8° Grado de EBI</h3>
+      <h2> Unidad Temática:</h2> <h3> Programación Estructurada: Bucles</h3>
+      <h2> Conocimientos previos:</h2> <h3>Variables, condicionales, tipos de datos y opradores relacionales y lógicos</h3> 
+      <h2> Objetivo de Aprendizaje:</h2> <h3>Serás capaz de aplicar bucles en tus programas, lo cual te permitirá automatizar tareas repetitivas sin necesidad de escribir el mismo código una y otra vez. Aprender a utilizar bucles es fundamental en programación porque optimiza el tiempo, mejora la eficiencia del código y facilita la resolución de problemas complejos.</h3>
+    </div>
+    
+    <br><br>
+    
+    <img src="imagenes/fondoInicio.jpg" alt="Fondo" class="fondo"/>
+
+    <div>
+      <h1> La nave Esperanza Estelar está en problemas. 
+        Los Bucle-Bots han fallado y necesitamos Agentes de Automatización como tú para reprogramarlos. Te dejo aquí el Mensaje que nos envía el Capitán Foster. Luego de mirarlo mira los recursos que te dejo para aprender más y si decides aceptar, sumarte a la misión para salvar la nave.
+      </h1>
+    </div>
+   
+    <div class="centrar"> <!-- Creo la clase "centrar" para dar formato centrado al la imágen -->
+      <img src="imagenes/mensajeCapitan.png" alt="mensajeCapitan" class="latido"/> <!-- Aquí la clase "circculo latido" para poder darle animación luego -->
+    </div>
+
+    <div class="centrar">
+      <video width="800" height="450" controls controlsList="nodownload"><source src="videos/comandante.mp4" type="video/mp4">
+      </video>
+      <br>
+    </div>
+    <h1> <a href="recursos.html">Ve a Recursos</h1>
+  </div>
+  </main>
+  
+  
+  
+  <!-- Pie de página -->
+    
+   <footer>
+  
+  <!--Derechos de autor-->
+  <p style="margin-top: 30px;">&copy; 2025 Bucle Bot by Eliana Avogadro</p>
+  
+  <p>
+    
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+      Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional
+    </a>
+  </p>
+</footer>
+
+</body>
+
+</html>

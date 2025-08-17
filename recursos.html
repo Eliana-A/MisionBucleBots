@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bucle Bot</title>
+  <link rel="icon" href="imagenes/logo.png" type="image/png"> <!--iono que aparecerá en la pestaña-->
+  <meta name="theme-color" content="#3565E8"> <!-- color de la pestaña (sólo parece funcionar en algunos navegadores)-->
+  
+  <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo style.css-->
+   
+</head>
+
+<!--Realizo comentarios en donde creo necesario aclarar, intentando no caer en excesos o redundancias -->  
+<body>
+  <!-- Encabezado principal con logo y menú de navegación  -->
+  <header>
+    
+    <div class="logo">
+      <img src="imagenes/logo.png" alt="Logo" class="logo"/>
+    </div>
+    
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="recursos.html">Recursos</a></li>
+        <li><a href="mision.html">Misión</a></li>
+        <li><a href="creditos.html">Créditos</a></li>
+      </ul>
+    </nav>
+    <hr>
+  </header>
+
+  
+  <main>
+  
+   <div class="container">
+    
+    <div class="centrar"> 
+      <img src="imagenes/losBucles.png" alt="Los Bucles" class="latido"/> <!-- Aquí la clase "circculo latido" para poder darle animación luego -->
+    </div>
+    <br>
+
+    <div class="centrar">
+      <video width="800" height="450" controls controlsList="nodownload"><source src="videos/mivideo1.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+    <br>
+        
+    <h2> Ya hemos trabajado con variables, condicionales, tipos de datos y operadores relacionales y lógicos. Ahora debemos aprender sobre los fundamentos de los bucles en programación para reprogramar los Bucle-Bots.</h2>
+    <br>
+    <div class="centrar"> 
+       <img src="imagenes/bucleText.png" alt="bucle" > 
+    </div>
+    <br>
+    <h2> Las estructuras como If (Si) nos permiten controlar el flujo que
+sigue nuestro programa si se cumple una condición, sin embargo esto no es suficiente para desarrollar programas
+más complejos. </h2>
+<h2>Imagina que necesitas hacer un programa que muestre los números del 1 al 5. Con lo que sabemos hasta ahora tendríamos que hacer
+un programa de más de cinco líneas de código, mostrando un número diferente en cada línea. </h2>
+<h2>Piensa Qué pasaría si necesitas hacer un programa que en lugar de contar del 1 al 5 tenga que contar del 1 hasta el 50.
+Serían más de cincuenta líneas de código, una por cada número. Sería un código completamente insostenible e
+innecesariamente largo. Para este tipo de casos, al programar usamos bucles o ciclos. </h2>
+  </h2>
+<br>
+   <div class="centrar"> 
+       <img src="imagenes/ejemplo1.png" alt="ejemplo1" >
+    </div>
+    
+   </div>
+  
+    <!-- Sección 2 -->
+    
+   <div class="container">
+     <section aria-label="Tipos de bucles">
+      <h1>LOS BUCLES, CICLOS O LOOPS MÁS UTILIZADOS (JavaScript y bloques en makecode) </h1>
+      <br>
+
+      <div class="videos"> 
+      
+       <article>
+          <iframe width="800" height="420" src="https://www.youtube.com/embed/0h_srypSheg?si=X5akZl0gciiDiCB_&amp;start=46" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4>Bucle WHILE (Condición)</h4>
+       </article>
+       
+       <article>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/7bO5wlqeeEI?si=ZQpbAdnTtaUZEM6b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <h4>Bucle FOR  </h4>
+       </article> 
+        
+       <article>
+          <video width="800" height="450" controls controlsList="nodownload"><source src="videos/buclesByEliana.mp4" type="video/mp4">
+       </article>
+      
+      </div>
+
+      <br>
+      <div class="elem">
+      <ul> 
+        <li><a><b>Bucle While:</b> En español "Mientras", se usa cuando no sabemos cuántas veces se va a repetir, pero queremos que lo haga mientras se cumpla una condición.
+          Por ejemplo, seguir preguntando algo hasta que el usuario diga "no".</a></li>
+        <br>
+        <li><a><b>Bucle For:</b> En español "Para", Es un bucle que repite una acción un número conocido de veces, pero además usa una variable que cambia en cada repetición.
+Esa variable nos permite saber en qué vuelta estamos y usarla dentro del bloque.
+Es útil cuando queremos hacer algo varias veces y llevar un "conteo" (como contar del 1 al 10).</a></li>
+        <br>
+        <li><a><b>Repeat:</b> O Repetir. Es muy parecido al Bucle For pero más sencillo. Repite una acción una cantidad fija de veces. Es simple y no muestra una variable que cambie.
+Se usa cuando queremos hacer algo un número exacto de veces, como repetir una animación 5 veces.</a></li>
+        <br>
+        <li><a><b>Bucle do...while:</b> Es parecido al while, pero primero se ejecuta una vez y después se fija si debe seguir repitiendo.
+          Es útil cuando queremos que algo se haga al menos una vez aunque la condición no se cumpla después. Esta estructura no existe en el lenguaje Python ni MakeCode.</a></li>
+        <br>
+        
+        
+      </ul>
+    </div>
+     </section>
+    </div>
+  
+    <div class="container">
+    <section aria-label="Bloques Y JavaScript en Make Code">
+      
+      <h1>OTROS SITIOS DE INTERÉS</h1>
+      
+      <div class="videos"> 
+      
+         <a href="https://makecode.microbit.org/courses/blocks-to-javascript/conditional-loops">Visita la página de MakeCode y revisa los ejemplos</a>
+      
+            
+         <a href="https://makecode.microbit.org/#editor">Practica en el editor de MakeCode</a>
+        <a href="https://lenguajejs.com/javascript/" target="_blank" rel="noopener noreferrer">
+                    Ir a LenguajeJS - JavaScript en español
+        </a>
+
+      </div>
+  
+    </section>
+    </div>
+    
+  </main>
+   
+  
+  <!-- Pie de página -->
+    
+  <footer>
+  
+  <!--Derechos de autor-->
+  <p style="margin-top: 30px;">&copy; 2025 Bucle Bot by Eliana Avogadro</p>
+  
+  <p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">
+      Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional
+    </a>
+  </p>
+</footer>
+
+</body>
+
+</html>
