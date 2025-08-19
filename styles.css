@@ -1,7 +1,8 @@
 body {
     background-color: #01012B; /* color de fondo del cuerpo (body) de la página    */
-    padding: 10px;  /* espacio interno entre el contenido y el borde */
+    padding: 0px;  /* espacio interno entre el contenido y el borde */
     font-family: 'Roboto Mono', monospace, 'Orbitron','Quicksand', sans-serif; /*Fuente del texto*/
+    font-size: 16px;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
   align-items: flex-end; /* Centrado vertical */
   justify-content: space-between; /* Logo a la izquierda, menú a la derecha */
   background-color: #01012B;
-  padding: 10px 50px;
+  padding: 10px 10px;
   flex-wrap: wrap; /* hace que si no caben los elementos en una linea, los baje a la siguiente*/
 }
 
@@ -22,9 +23,9 @@ header {
 nav ul.menu {
   display: flex;/* Organiza los elementos en fila horizontal */
   list-style: none;   /* estilo de viñetas */
-  margin: 0;  /*Elimina el margen predeterminado*/
-  padding: 2px;  /*Elimina el relleno interior predeterminado*/
-  gap: 50px; /* con gap defino el espacio entre los elementos*/
+  margin: 10px 20px;  /*Elimina el margen predeterminado*/
+  padding: 2px;  /*Relleno interior */
+  gap: 20px; /* con gap defino el espacio entre los elementos*/
   font-family: 'Orbitron', sans-serif, monospace, cursive, "Times New Roman", Times, serif; 
   box-shadow: 0 4px 6px #b6b6b4; /* Sombra suave */
 }
@@ -40,35 +41,53 @@ nav a {
 nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se destaquen*/
   color:  #b6b6b4 ; /*Cambia el color de la letra*/
   background-color: #01012B;
-  padding: 5px;/* Ajusta el tamaño del padding interno */
+  padding: 8px;/* Ajusta el tamaño del padding interno */
   border-radius: 10px; /* Redondea las esquinas de los bordes */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Agrega sombra  */
 }
 
 .container {  /*En el caso de mi página lo utilizo para resaltar el contenido central o más relevante*/
     width: 100%;
-    max-width: 1200px; /*Tamaño máximo del contenedor*/
-    margin: 10px auto; /*margen arriba y abajo de 10px e izquierdo y derecho automático, lo que lo centra horizontalmente*/
+    max-width: 90%; /*Tamaño máximo del contenedor*/
+    margin: 20px auto; /*margen arriba y abajo de 10px e izquierdo y derecho automático, lo que lo centra horizontalmente*/
     background-color: #01012B; /* Fondo ligeramente más claro para el contenedor principal */
-    padding: 30px;
+    padding: 10px;
     border-radius: 6px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);*/
 }
 
 .centrar {  /*La utilizo para centrar la imágen en el contenedor*/
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
+  width: 100%;
   height: auto; 
+  text-align: center;
 }
 
 .latido { /*Ancho y alto de la imágen*/
-  width: 30%;
+  width: 20%;
   height: auto; 
 }
 
- 
+ .video-container {
+  position: relative;
+  width: 60%;           /* ocupa 60% del ancho del contenedor padre */
+  margin: 30px auto;    /* centrado horizontal */
+  padding-bottom: 33.75%; /* altura proporcional: 60% ancho * 0.5625 para 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
 
 .video-wrapper {
   position: relative;
@@ -151,6 +170,7 @@ img {
   display: block;
   margin-left: auto;
   margin-right: auto; 
+  justify-content: center;
 }
   
 .elem {
@@ -177,8 +197,8 @@ img {
 }
 
 .videos iframe {
-  width: 100%;
-  height: 100%; /* Altura fija a 220px*/
+  width: auto;
+  height: 100%; /* Altura fija */
   border: none; /*sin bordes*/
   border-radius: 8px;
   margin-bottom: 10px;
@@ -205,7 +225,7 @@ img {
 /* Estilo del footer  */
 footer {
   margin-top: 20px;
-  padding: 20px 50px;
+  padding: 20px 20px;
   font-family: 'Quicksand', sans-serif;
   background-color: #01012B;
   color: #f5f2e8;
@@ -215,14 +235,18 @@ footer {
 /* Copyright centrado en la página */
 footer p {
   text-align: left;
-  margin-top: 40px;
+  margin-top: 20px;
   font-size: 0.9em;
 }
 
 /* Responsive para móviles */
 @media (max-width: 768px) {
   .video-wrapper {
-    width: 95%;
+    width: 90%;
+    
+  }
+   body {
+    font-size: 14px;
   }
   .video-wrapper iframe {
     height: 300px; /* Altura menor en móviles */
@@ -235,5 +259,8 @@ footer p {
 @media (max-width: 480px) {
   .video-wrapper iframe {
     height: 200px; /* Altura muy pequeña */
+  }
+  body {
+    font-size: 12px;
   }
 }
