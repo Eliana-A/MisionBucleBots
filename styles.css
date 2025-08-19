@@ -49,7 +49,7 @@ nav a:hover { /* Hace que  cuando se pase el mouse por los ítems del menú, se 
 .container {  /*En el caso de mi página lo utilizo para resaltar el contenido central o más relevante*/
     width: 100%;
     max-width: 90%; /*Tamaño máximo del contenedor*/
-    margin: 20px auto; /*margen arriba y abajo de 10px e izquierdo y derecho automático, lo que lo centra horizontalmente*/
+    margin: 10px auto; /*margen arriba y abajo de 10px e izquierdo y derecho automático, lo que lo centra horizontalmente*/
     background-color: #01012B; /* Fondo ligeramente más claro para el contenedor principal */
     padding: 10px;
     border-radius: 6px;
@@ -142,13 +142,13 @@ img {
   
 .elem {
   display: flex; /* Dispone que el contenedor sea flexible*/
-  margin-top: 50px;
+  margin-top: 30px;
   margin-left: 20px;
 }
  
 .elem ul{
   list-style-type: square;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 .elem ul li::marker {
   color: #3565E8; /* color de la viñeta */
@@ -247,5 +247,6 @@ footer p {
   margin-top: 20px;
   font-size: 0.9em;
 }
+
 
 
