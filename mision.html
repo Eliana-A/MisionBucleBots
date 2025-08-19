@@ -32,32 +32,38 @@
   </header>
 
  
-  <main>
-   
+<main>
   <div class="container">    
-    
-       
+
+    <!-- Imagen -->
     <div class="centrar"> 
-      <img src="imagenes/mensajeCapitan.png" alt="mensajeCapitan" class="latido"/> <!-- Aquí la clase "circculo latido" para poder darle animación luego -->
+      <img src="imagenes/mensajeCapitan.png" 
+           alt="mensajeCapitan" 
+           class="latido"/>
     </div>
 
-    <div class="centrar">
-      <video width="800" height="450" controls controlsList="nodownload"><source src="videos/introMisión.mp4" type="video/mp4">
-      </video>
-    </div>
-    <br/>
-    
-    <!-- Cree el siguiente contenedor para darle formato al archivo-->
-    <div class="video-wrapper">
-       <!--<div style="width: 100%;">--><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe title="Misión Bucle-Bot" frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/6883bb93a8768613221df3a7" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>" title="Genially" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-   
-    
-   
-  </div>
- 
+    <!-- Primer video (YouTube) -->
   
-  </main> 
+      
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uFk7xfLCM_8?si=ShxkyBl3rj__OCv-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      </div>
+    
+
+    <br/>
+
+    <!-- Segundo recurso (Genially) -->
+    <div class="video-container">
+      <iframe src="https://view.genially.com/6883bb93a8768613221df3a7" 
+              title="Misión Bucle-Bot"
+              frameborder="0" 
+              allowfullscreen 
+              scrolling="yes">
+      </iframe>
+    </div>
+
+</main>
   
    <!-- Pie de página -->
     
