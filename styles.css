@@ -15,7 +15,7 @@ header {
 }
 
 .logo img {
-  height: 120px; /*Fijo el alto de la imagen*/
+  height: 100px; /*Fijo el alto de la imagen*/
   width: auto; /*Dejo el ancho automático para que la imagen se acomode sin perder la proporción*/
   
 }
@@ -264,3 +264,4 @@ footer p {
     font-size: 12px;
   }
 }
+
